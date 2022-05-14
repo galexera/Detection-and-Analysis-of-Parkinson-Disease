@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>MOTOR</title>
+    <!-- <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="MOTOR.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script> -->
+    <meta name="generator" content="Nicepage 4.5.4, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <style>
+        .u-section-1 {
+            background-image: url("static/images/2150862.jpg") !important;
+            background-position: 50% 50%;
+        }
+
+        /* 
+        #toast {
+            visibility: hidden;
+            width: 200px;
+            height: 100px;
+            margin: auto;
+            background-color: #54aee4;
+            color: white;
+            text-align: center;
+            border-radius: 2px;
+
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            bottom: 30px;
+            font-size: 17px;
+            white-space: nowrap;
+        }
+
+        #toast #img {
+            width: 50px;
+            height: 50px;
+
+            float: left;
+
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            box-sizing: border-box;
+
+
+            background-color: #54aee4;
+            color: white;
+        }
+
+        #toast #desc {
+
+
+            color: white;
+
+            padding: 16px;
+
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #toast.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+        }
+
+        @-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes expand {
+            from {
+                min-width: 500px
+            }
+
+            to {
+                min-width: 500px
+            }
+        }
+
+        @keyframes expand {
+            from {
+                min-width: 500px
+            }
+
+            to {
+                min-width: 500px
+            }
+        }
+
+        @-webkit-keyframes stay {
+            from {
+                min-width: 500px
+            }
+
+            to {
+                min-width: 500px
+            }
+        }
+
+        @keyframes stay {
+            from {
+                min-width: 500px
+            }
+
+            to {
+                min-width: 500px
+            }
+        }
+
+        @-webkit-keyframes shrink {
+            from {
+                min-width: 500px;
+            }
+
+            to {
+                min-width: 50px;
+            }
+        }
+
+        @keyframes shrink {
+            from {
+                min-width: 500px;
+            }
+
+            to {
+                min-width: 500px;
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 60px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 60px;
+                opacity: 0;
+            }
+        } */
+
+        /*  new toast style */
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        .alert {
+            background: #ffdb9b;
+            padding: 20px 40px;
+            min-width: 420px;
+            position: absolute;
+            right: 0;
+            top: 200px;
+            border-radius: 4px;
+            border-left: 8px solid #ffa502;
+            overflow: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .alert.showAlert {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .alert.show {
+            animation: show_slide 1s ease forwards;
+        }
+
+        @keyframes show_slide {
+            0% {
+                transform: translateX(100%);
+            }
+
+            40% {
+                transform: translateX(-10%);
+            }
+
+            80% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-10px);
+            }
+        }
+
+        .alert.hide {
+            animation: hide_slide 1s ease forwards;
+        }
+
+        @keyframes hide_slide {
+            0% {
+                transform: translateX(-10px);
+            }
+
+            40% {
+                transform: translateX(0%);
+            }
+
+            80% {
+                transform: translateX(-10%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .alert .fa-exclamation-circle {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ce8500;
+            font-size: 30px;
+        }
+
+        .alert .msg {
+            padding: 0 20px;
+            font-size: 18px;
+            color: #ce8500;
+        }
+
+        .alert .close-btn {
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffd080;
+            padding: 20px 18px;
+            cursor: pointer;
+        }
+
+        .alert .close-btn:hover {
+            background: #ffc766;
+        }
+
+        .alert .close-btn .fas {
+            color: #ce8500;
+            font-size: 22px;
+            line-height: 40px;
+        }
+
+        #content1::after {
+            content: "\a";
+            white-space: pre;
+        }
+    </style>
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "static/images/logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="MOTOR">
+    <meta property="og:type" content="website">
+</head>
+
+<body class="u-body u-xl-mode">
+    {% extends "base.html" %} {% block content %}
+
+    <!-- <div id="toast">
+        <div id="desc">Please do not refresh until the process completes.</div>
+        <div id="desc" style="text-align: center;">You will be notified when its done</div>
+
+    </div> -->
+    <div class="alert hide" style="z-index: 100;">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg " id="content1">Please do not refresh until the process completes.</span>
+        <span class="msg" id="content2">You will be notified when its done</span>
+        <div class="close-btn">
+            <span class="fas fa-times"></span>
+        </div>
+    </div>
+    <!-- <header class="u-clearfix u-header u-sticky u-sticky-ba6b u-white u-header" id="sec-6b9e">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="512"
+                data-image-height="125">
+                <img src="static/images/logo.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                <div class="menu-collapse u-custom-font u-font-montserrat"
+                    style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                    <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-text-shadow u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#">
+                        <svg class="u-svg-link" viewBox="0 0 24 24">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-custom-font u-font-montserrat u-nav u-spacing-30 u-unstyled u-nav-1">
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-2 u-text-hover-custom-color-1"
+                                href="/Home.html" style="padding: 14px 30px;">Home</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-2 u-text-hover-custom-color-1"
+                                href="/About.html" style="padding: 14px 30px;">About</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-2 u-text-hover-custom-color-1"
+                                href="/Sign-Up.html" style="padding: 14px 30px;">Sign Up</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-2 u-text-hover-custom-color-1"
+                                style="padding: 14px 24px 14px 30px;">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Home.html"
+                                        style="padding: 10px 80px;">Home</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/About.html"
+                                        style="padding: 10px 80px;">About</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Sign-Up.html"
+                                        style="padding: 10px 80px;">Sign Up</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                        style="padding: 10px 80px;">Sign In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+        </div>
+    </header> -->
+    <section class="u-clearfix u-image u-section-1" id="sec-76ce" data-image-width="1600" data-image-height="900">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-container-style u-group u-radius-27 u-shape-round u-white u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <p class="u-align-center u-text u-text-default u-text-1">
+                        <span style="font-size: 2.25rem;">MOTOR MOVEMENTS(M)</span>
+                        <br>
+                        <br><b></b>
+                    </p>
+                    <div class="u-clearfix u-custom-html u-custom-html-1">
+                        <video width="500" height="300" autoplay="" muted="" loop>
+                            <source src="static\images\MOTOR.mp4" type="video/mp4">
+                            <source src="spiral&#10;&#9;&#9;&#9;   .ogg" type="video/ogg"> Your browser does not support
+                            the video tag.
+                        </video>
+                    </div>
+                    <p class="u-align-center u-text u-text-2">
+                        <span style="font-size: 1.125rem;"><i>Upload a Video Similar to the shown one showing your
+                                walking movements :</i>
+                        </span>
+                        <br>
+                    </p>
+                    <!-- <a href="https://nicepage.com/static-site-generator"
+                        class="u-active-palette-1-light-1 u-border-none u-btn u-button-style u-custom-color-2 u-hover-custom-color-1 u-btn-1">upload</a>
+                    <a href="https://nicepage.com/static-site-generator"
+                        class="u-active-palette-1-light-1 u-border-none u-btn u-button-style u-custom-color-2 u-hover-custom-color-1 u-btn-2">predict</a>
+                 -->
+                    <div style="display: flex; justify-content: center;">
+                        <form id="upload-file" method="POST" enctype="multipart/form-data">
+                            <label for="imageUpload"
+                                class="u-active-palette-1-light-1 u-border-none u-btn u-button-style u-custom-color-2 u-hover-custom-color-1 u-btn-1">
+                                Select your input feature
+                            </label>
+                            <input type="file" name="file" id="imageUpload">
+                        </form>
+                    </div>
+
+                    <div class="image-section" style="display:none;">
+
+                        <div style="display: flex; justify-content: center;">
+                            <button type="button"
+                                class="u-active-palette-1-light-1 u-border-none u-btn u-button-style u-custom-color-2 u-hover-custom-color-1 u-btn-1"
+                                id="btn-predict_MM_cfs">Predict</button>
+                        </div>
+
+                    </div>
+
+                    <div class="loader" style="display:none; z-index: 100;"></div>
+
+                    <h3 id="result" style="z-index: 101;">
+                        <span>
+                            <div style="display: flex; justify-content: center;">
+                                <button type="button"
+                                    class="u-active-palette-1-light-1 u-border-none u-btn u-button-style u-custom-color-2 u-hover-custom-color-1 u-btn-1"
+                                    id="exit">Back to home</button>
+                            </div> 
+                        </span>
+                        
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% endblock %}
+
+
+    <!-- <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b408">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">Sample footer text</p>
+        </div>
+    </footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+        <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+            <span>HTML Templates</span>
+        </a>
+        <p class="u-text">
+            <span>created with</span>
+        </p>
+        <a class="u-link" href="" target="_blank">
+            <span>WYSIWYG Web Builder</span>
+        </a>.
+    </section> -->
+</body>
+
+</html>
